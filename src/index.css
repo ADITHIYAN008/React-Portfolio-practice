@@ -7,3 +7,17 @@
 #root {
   font-family: "Inter", sans-serif;
 }
+
+@layer base {
+  ::-webkit-scrollbar-thumb {
+    @apply bg-transparent shadow-sm;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-2 bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))];
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-3xl bg-blue-400 /*color trackbar*/;
+  }
+}
